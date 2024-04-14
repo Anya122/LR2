@@ -97,3 +97,4 @@ C:\Users\Anna\RiderProjects\ConsoleApp1\TestProject1\obj\Debug\net8.0\refint\Tes
 C:\Users\Anna\RiderProjects\ConsoleApp1\TestProject1\obj\Debug\net8.0\TestProject1.pdb
 C:\Users\Anna\RiderProjects\ConsoleApp1\TestProject1\obj\Debug\net8.0\TestProject1.genruntimeconfig.cache
 C:\Users\Anna\RiderProjects\ConsoleApp1\TestProject1\obj\Debug\net8.0\ref\TestProject1.dll
+C:\Users\Anna\RiderProjects\ConsoleApp1\TestProject1\obj\Debug\net8.0\TestProject1.sourcelink.json
