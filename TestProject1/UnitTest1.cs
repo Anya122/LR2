@@ -5,7 +5,7 @@ public class Tests
     [Test]
     public void Test1()
     {
-        var autor = new Autor("Anna", "Arkhipova", 21);
+        var autor = new Autor("Anna", "Arkhipova", 21, 20000);
         Assert.That(autor.firstName, Is.EqualTo("Anna"));
         
     }
