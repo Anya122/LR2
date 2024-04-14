@@ -11,11 +11,12 @@ public class Book : Author
     public bool IsPublished = false;
     public bool IsDestroyed = false;
 
-    public Book(string bname, string genre_, int wantTirage_, Author author) : base(author.firstName, author.lastName, author.city, author.age, author.budget)
+    public Book(string bname, string genre_, int wantTirage_, Author author) : base(author.firstName, author.lastName, author.city, author.budget)
     {
         bookName = bname;
         genre = genre_;
         wantTirage = wantTirage_;
+        setPages();
     }
     
     public void setPages()

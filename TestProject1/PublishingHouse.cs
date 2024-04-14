@@ -71,7 +71,14 @@ public class PublishingHouse
         Critic critic = new Critic(name, strictness, house);
         return critic;
     }
-    
-    
+
+    public Contract makeConract(int num, Book book)
+    {
+        PublishingHouse house = this as PublishingHouse;
+        Contract contract = new Contract(num, book, house);
+        return contract;
+    }
+
+
 
 }

@@ -3,6 +3,10 @@ namespace TestProject1;
 
 public class DataBase
 {
+    public DataBase()
+    {
+        
+    }
     public bool checkComplited = false;
     public List<KeyValuePair<string, string>> books = new List<KeyValuePair<string, string>>();
 

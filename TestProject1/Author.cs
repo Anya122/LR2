@@ -10,12 +10,13 @@ public class Author
     public int budget  {get; set;}
     private bool readyToPublic = false;
 
-    public Author(string fname, string lname, string city_, int age_, int budget_)
+    public Author(string fname, string lname, string city_, int budget_)
     {
         firstName = fname;
         lastName = lname;
         city = city_;
-        age = age_;
+        Random random = new Random();
+        age = random.Next(18, 100);
         budget = budget_;
     }
 
