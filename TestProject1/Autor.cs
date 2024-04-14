@@ -2,10 +2,28 @@ namespace TestProject1;
 
 public class Autor
 {
-    public string Name { get; set; }
+    public string firstName { get; set; }
+    public string lastName { get; set; }
+    public int age { get; set; }
+    public int budget = 20000;
+    private bool readyToPublic = false;
 
-    public Autor(string name)
+    public Autor(string fname, string lname, int a)
     {
-        Name = name;
+        firstName = fname;
+        lastName = lname;
+        age = a;
     }
+
+    public void writeBook()
+    {
+
+        readyToPublic = true;
+    }
+
+    public bool checkState()
+    {
+        return readyToPublic;
+    }
+
 }
