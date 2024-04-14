@@ -15,9 +15,11 @@ public class DataBase
     {
         books.Add(new KeyValuePair<string, string>("Arkhipova", "Kotenok Koshunya"));
         books.Add(new KeyValuePair<string, string>("Limonnikov", "Avtobiografia"));
+        books.Add(new KeyValuePair<string, string>("Tulegenov", "Gleb Memuars"));
         books.Add(new KeyValuePair<string, string>("Gazizylin", "Anime Tatarin"));
         books.Add(new KeyValuePair<string, string>("Dolgoff", "Skyff adventure"));
         books.Add(new KeyValuePair<string, string>("Krakozyabra", "Kir Kir Kir"));
+        books.Add(new KeyValuePair<string, string>("Chuppkabra", "Houmik"));
         checkComplited = false;
     }
 

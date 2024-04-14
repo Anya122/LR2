@@ -10,7 +10,8 @@ public class PublishingHouse
     
     public int maxWorkload  {get; set;}
     
-    private bool readyToPublic = false;
+    private bool readyToPublic;
+    private bool isOpen = true;
 
     public PublishingHouse(string hname, string city_, int currentWorkload_, int maxWorkload_)
     {
@@ -18,19 +19,29 @@ public class PublishingHouse
         city = city_;
         currentWorkload = currentWorkload_;
         maxWorkload = maxWorkload_;
+        if (currentWorkload < maxWorkload) readyToPublic = true;
+        else readyToPublic = false;
     }
 
     public bool startPublic(Book book)
     {
-        if (currentWorkload + book.wantTirage > maxWorkload && book.GetAuthorCity() == city)
+        if (isOpen && readyToPublic && book.GetAuthorCity() == city)
         {
-            readyToPublic = false;
+            if (currentWorkload + book.wantTirage > maxWorkload)
+            {
+                book.wantTirage = maxWorkload - currentWorkload;
+                currentWorkload = maxWorkload;
+            }
+            else
+            {
+                currentWorkload += book.wantTirage;
+            }
+            readyToPublic = true;
             return readyToPublic;
         }
-        else
+        else 
         {
-            currentWorkload += book.wantTirage;
-            readyToPublic = true;
+            readyToPublic = false;
             return readyToPublic;
         }
     }
@@ -39,5 +50,28 @@ public class PublishingHouse
     {
         return readyToPublic;
     }
+    public bool checkOpen()
+    {
+        return isOpen;
+    }
+
+    public void Open()
+    {
+        isOpen = true;
+    }
+
+    public void Close()
+    {
+        isOpen = false;
+    }
+    
+    public Critic employCritic(string name, int strictness)
+    {
+        PublishingHouse house = this as PublishingHouse;
+        Critic critic = new Critic(name, strictness, house);
+        return critic;
+    }
+    
+    
 
 }

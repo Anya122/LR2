@@ -7,6 +7,7 @@ public class Book : Author
 
     public int pages = 0;
     public int wantTirage { get; set; }
+    public int mark = 0;
     public bool IsPublished = false;
     public bool IsDestroyed = false;
 
