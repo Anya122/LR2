@@ -43,4 +43,9 @@ public class Book : Author
     {
         return city;
     }
+    
+    public string GetAuthorlName()
+    {
+        return lastName;
+    }
 }
