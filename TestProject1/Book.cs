@@ -1,6 +1,6 @@
 namespace TestProject1;
 
-public class Book
+public class Book : Author
 {
     public string bookName { get; set; }
     public string genre { get; set; }
@@ -10,7 +10,7 @@ public class Book
     public bool IsPublished = false;
     public bool IsDestroyed = false;
 
-    public Book(string bname, string genre_, int wantTirage_)
+    public Book(string bname, string genre_, int wantTirage_, Author author) : base(author.firstName, author.lastName, author.city, author.age, author.budget)
     {
         bookName = bname;
         genre = genre_;
@@ -36,5 +36,10 @@ public class Book
     public bool checkDestroy()
     {
         return IsDestroyed;
+    }
+    
+    public string GetAuthorCity()
+    {
+        return city;
     }
 }

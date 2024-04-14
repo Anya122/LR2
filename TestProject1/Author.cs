@@ -1,6 +1,6 @@
 namespace TestProject1;
 
-public class Autor
+public class Author
 {
     public string firstName { get; set; }
     public string lastName { get; set; }
@@ -10,7 +10,7 @@ public class Autor
     public int budget  {get; set;}
     private bool readyToPublic = false;
 
-    public Autor(string fname, string lname, string city_, int age_, int budget_)
+    public Author(string fname, string lname, string city_, int age_, int budget_)
     {
         firstName = fname;
         lastName = lname;
@@ -19,10 +19,12 @@ public class Autor
         budget = budget_;
     }
 
-    public void writeBook(string bname, string genre, int wantTirage)
+    public Book writeBook(string bname, string genre, int wantTirage)
     {
-        Book book = new Book(bname, genre, wantTirage);
+        Author author = this as Author;
+        Book book = new Book(bname, genre, wantTirage, author);
         readyToPublic = true;
+        return book;
     }
     
     public void goCity(string city_)

@@ -22,7 +22,7 @@ public class PublishingHouse
 
     public bool startPublic(Book book)
     {
-        if (currentWorkload + book.wantTirage > maxWorkload)
+        if (currentWorkload + book.wantTirage > maxWorkload && book.GetAuthorCity() == city)
         {
             readyToPublic = false;
             return readyToPublic;
