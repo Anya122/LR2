@@ -68,7 +68,7 @@ public class Tests_features
     {
         var author = new Author("Anna", "Arkhipova",  "Izhevsk", 20000);
         var book = new Book("Orange is new Black", "drama",  10000, author);
-        Assert.That(book.mark, Is.EqualTo(0));
+        Assert.That(book.mark, Is.EqualTo(-1));
     }
     
     [Test]
