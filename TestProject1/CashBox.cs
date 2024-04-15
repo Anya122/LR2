@@ -23,7 +23,7 @@ public class CashBox: PublishingHouse
         {
             IsPaied = true;
             book.IsPublished = true;
-            dbase.addCurrentBook(book.GetAuthorlName(), book.bookName);
+            dbase.addCurrentBook(book);
             book.budget -= cost;
         }
         else

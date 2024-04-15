@@ -8,11 +8,11 @@ public class DataBase
 
     public DataBase()
     {
-        addBooks();
+        
     }
-    public void addCurrentBook(string author, string book)
+    public void addCurrentBook(Book book)
     {
-        books.Add(new KeyValuePair<string, string>(author, book));
+        books.Add(new KeyValuePair<string, string>(book.GetAuthorlName(), book.bookName));
         checkComplited = false;
     }
     public void addBooks()
@@ -27,11 +27,11 @@ public class DataBase
         checkComplited = false;
     }
 
-    public bool checkBook(string author, string bookName)
+    public bool checkBook(Book book)
     {
         foreach (var pair in books)
         {
-            if (bookName == pair.Value)
+            if (book.bookName == pair.Value)
             {
                 checkComplited = true;
                 return false;

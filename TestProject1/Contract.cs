@@ -24,7 +24,7 @@ public class Contract: PublishingHouse
     { 
         IsSign = true;
         book.IsPublished = true;
-        dbase.addCurrentBook(book.GetAuthorlName(), book.bookName);
+        dbase.addCurrentBook(book);
     }
     
     public bool getSign()

@@ -96,7 +96,7 @@ public class Tests_features
     public void Test1_4_1()
     {
         var database = new DataBase();
-        Assert.IsNotEmpty(database.books);
+        Assert.IsEmpty(database.books);
     }
     
     [Test]
