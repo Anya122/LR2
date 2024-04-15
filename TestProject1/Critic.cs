@@ -10,6 +10,8 @@ public class Critic : PublishingHouse
     {
         name = name_;
         strictness = strictness_;
+        if (strictness > 5) strictness = 5;
+        if (strictness < 0) strictness = 0;
         houseName = house.houseName;
     }
 
