@@ -25,6 +25,13 @@ public class Tests_features
     }
     
     [Test]
+    public void Test1_1_4()
+    {
+        var author = new Author("Anna", "Arkhipova",  "Izhevsk", 20000);
+        Assert.IsTrue(author.age > 17);
+    }
+    
+    [Test]
     public void Test1_2_1()
     {
         var author = new Author("Anna", "Arkhipova",  "Izhevsk", 20000);
