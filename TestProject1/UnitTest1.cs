@@ -77,6 +77,7 @@ public class Tests_features
         var house = new PublishingHouse("A-Zbuka", "Moscow", 13, 60);
         Assert.That(house.houseName, Is.EqualTo("A-Zbuka"));
     }
+    
     [Test]
     public void Test1_3_2()
     {

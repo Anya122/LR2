@@ -8,6 +8,7 @@
   &lt;TestAncestor&gt;&#xD;
     &lt;TestId&gt;NUnit3x::5BB254E2-E3AD-4D26-A2ED-69127F3E58B4::net8.0::TestProject1.Test_methods&lt;/TestId&gt;&#xD;
     &lt;TestId&gt;NUnit3x::5BB254E2-E3AD-4D26-A2ED-69127F3E58B4::net8.0::TestProject1.Tests_features&lt;/TestId&gt;&#xD;
+    &lt;TestId&gt;NUnit3x::5BB254E2-E3AD-4D26-A2ED-69127F3E58B4::net8.0::TestProject1.Test_state&lt;/TestId&gt;&#xD;
   &lt;/TestAncestor&gt;&#xD;
 &lt;/SessionState&gt;</s:String>
 	<s:String x:Key="/Default/Environment/UnitTesting/UnitTestSessionStore/Sessions/=a70b41f0_002Da8f1_002D4b95_002Db074_002Da24783e8a7b1/@EntryIndexedValue">&lt;SessionState ContinuousTestingMode="0" Name="Test1 #2" xmlns="urn:schemas-jetbrains-com:jetbrains-ut-session"&gt;&#xD;

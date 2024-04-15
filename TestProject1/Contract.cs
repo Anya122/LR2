@@ -6,7 +6,7 @@ public class Contract: PublishingHouse
     public string houseName { get; set; }
     public int authorProfit { get; set; }
 
-    public bool IsSign { get; set; }
+    public bool IsSign = false;
     
     public Contract( int number_, Book book, PublishingHouse house) : base(house.houseName, house.city, house.currentWorkload, house.maxWorkload)
     {
