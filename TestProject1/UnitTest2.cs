@@ -49,6 +49,17 @@ public class Test_methods
     [Test]
     public void Test2_3_3()
     {
+        var author = new Author("Anna", "Arkhipova",  "Izhevsk", 20000);
+        var book = new Book("Orange is new Black", "drama",  10000, author);
+        
+        var house = new PublishingHouse("A-Zbuka", "Moscow", 13, 60);
+        var cashBox = house.MakeCashBox(book);
+        Assert.That(cashBox.houseName, Is.EqualTo("A-Zbuka"));
+    }
+    
+    [Test]
+    public void Test2_3_4()
+    {
         var author = new Author("Anna", "Arkhipova",  "Moscow", 20000);
         var book = new Book("Orange is new Black", "drama",  10000, author);
         
@@ -58,7 +69,7 @@ public class Test_methods
     }
     
     [Test]
-    public void Test2_3_4()
+    public void Test2_3_5()
     {
         var author = new Author("Anna", "Arkhipova",  "Izhevsk", 20000);
         var book = new Book("Orange is new Black", "drama",  10000, author);
@@ -69,7 +80,7 @@ public class Test_methods
     }
     
     [Test]
-    public void Test2_3_5()
+    public void Test2_3_6()
     {
         var author = new Author("Anna", "Arkhipova",  "Moscow", 20000);
         var book = new Book("Orange is new Black", "drama",  10000, author);

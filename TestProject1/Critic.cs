@@ -18,7 +18,7 @@ public class Critic : PublishingHouse
     public void reviewBook(Book book)
     { 
         Random random = new Random(); 
-        book.mark = strictness * random.Next(0, 20); 
+        book.mark = strictness * random.Next(0, 30); 
     }
 
     public bool goodBook(Book book)

@@ -78,6 +78,13 @@ public class PublishingHouse
         Contract contract = new Contract(num, book, house);
         return contract;
     }
+    
+    public CashBox MakeCashBox(Book book)
+    {
+        PublishingHouse house = this as PublishingHouse;
+        CashBox cashBox = new CashBox(book, house);
+        return cashBox;
+    }
 
 
 
